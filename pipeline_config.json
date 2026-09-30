@@ -1,0 +1,44 @@
+{
+ "seg_imgsz": 1024,
+ "pose_imgsz": 1024,
+ "bone_imgsz": 768,
+ "seg_conf": 0.25,
+ "pose_conf": 0.25,
+ "kpt_conf": 0.5,
+ "bone_threshold": 0.5,
+ "keypoint_names": [
+  "cej",
+  "cej",
+  "apex",
+  "apex"
+ ],
+ "landmark_box_half": 8,
+ "min_bone_component_px": 30,
+ "defect_scales": [
+  0.08,
+  0.15,
+  0.25
+ ],
+ "horizontal_deg": 54.1,
+ "narrow_deg": 25,
+ "wide_deg": 37,
+ "min_depth_ratio": 0.07,
+ "cr_min": 1.0,
+ "cr_border": 1.25,
+ "prog_fair": 25,
+ "prog_poor": 50,
+ "prog_hopeless": 80,
+ "assumed_root_mm": 13.0,
+ "px_per_mm": null,
+ "cl_mm": 3,
+ "outputs": [
+  "tooth",
+  "landmarks",
+  "bone_level",
+  "defects",
+  "prognosis",
+  "crown_lengthening",
+  "stage"
+ ],
+ "production_bone_model": "unetpp_effb4_imagenet"
+}
